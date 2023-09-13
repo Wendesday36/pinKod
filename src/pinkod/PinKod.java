@@ -18,6 +18,7 @@ public class PinKod {
     public static void main(String[] args) {
         String kod = beker();
         ellenorzes( kod);
+        keveres();
     }
 
     private static String beker() {
@@ -31,7 +32,7 @@ public class PinKod {
             System.out.println("nem jó formátum,minimum 4, maximum6 számjegy!");
             beker();
         }
-        
+        //pin ellenorzes nem mukodik,hogy szam-e
         return pin;
 
     }
@@ -52,6 +53,11 @@ public class PinKod {
         }else{
             System.out.print("belépés megtagadva!");
         }
+        
+    }
+
+    private static void keveres() {
+        int[] tomb = {0,1,2,3,4,5,6,7,8,9};
         
     }
 
